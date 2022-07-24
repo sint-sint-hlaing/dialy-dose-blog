@@ -26,10 +26,10 @@ const Cards = () => {
               <h3 className="text-2xl text-bold text-center pt-10">
                 {post.title}
               </h3>
-              <p className="p-10">{post.body}</p>
+              <p className=" py-10 ">{post.body}</p>
               <div className="flex items-center justify-center">
                 <Link to={`/blog/${post.id}`}>
-                  <button className="inline-flex items-center justify-center bg-yellow-400 w-xl py-2 px-7 rounded-md text-lg md:hover:bg-yellow-300">
+                  <button className="inline-flex items-center justify-center bg-yellow-400 py-2 px-6 md:px-10 md:py-4 rounded-md text-md md:text-lg md:hover:bg-yellow-300">
                     View
                   </button>
                 </Link>

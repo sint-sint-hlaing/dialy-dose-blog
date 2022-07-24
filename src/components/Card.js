@@ -17,8 +17,8 @@ const Card = () => {
   function render() {
     if (data) {
       return (
-        <div className="w-screen mt-12 md:mt-32 md:w-1/2 m-auto my-5">
-          <h1 className="text-xl mb-10 md:text-3xl text-bold text-center mb-5">
+        <div className="w-full mt-12 md:mt-32 md:w-1/2 m-auto my-5">
+          <h1 className="text-xl text-bold pt-10 mb-10 md:text-3xl text-bold text-center mb-5">
             {" "}
             {data.title}
           </h1>
@@ -29,7 +29,7 @@ const Card = () => {
           />
           <p className="break-normal mb-10 text-md md:text-xl">{data.body}</p>
           <Link to="/blog">
-            <button className="bg-yellow-400 px-8 py-3 rounded-md text-lg hover:bg-yellow-300">
+            <button className="bg-yellow-400 py-2 px-6 md:px-10 md:py-4 text-md rounded-md md:text-xl hover:bg-yellow-300">
               Back
             </button>
           </Link>

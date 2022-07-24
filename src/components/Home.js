@@ -22,7 +22,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="flex-1 mt-20 md:mt-40">
+      <div className="flex-1 my-16 md:mt-40">
         <img
           src="https://img.freepik.com/free-vector/blogging-concept-illustration_114360-4480.jpg?size=626&ext=jpg&ga=GA1.2.507420265.1658291633"
           className=""
