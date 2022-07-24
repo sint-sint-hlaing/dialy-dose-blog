@@ -15,19 +15,20 @@ const Home = () => {
           it over 2000 years old. Contrary to popular belief, Lorem Ipsum is not
           simply random text.
         </p>
-        <button className="inline-flex items-center justify-center bg-yellow-400 w-xl h-12 p-7 mt-7 mr-10 rounded-md text-xl hover:bg-yellow-300 ">
-          Get Started
-        </button>
+        <Link to="/blog">
+          <button className="inline-flex items-center justify-center bg-yellow-400 w-xl h-12 p-7 mt-7 mr-10 rounded-md text-xl hover:bg-yellow-300 ">
+            Get Started
+          </button>
+        </Link>
       </div>
-      <Link to="/blog">
-        <div className="flex-1 mt-28">
-          <img
-            src="https://img.freepik.com/free-vector/blogging-concept-illustration_114360-4480.jpg?size=626&ext=jpg&ga=GA1.2.507420265.1658291633"
-            className=""
-            alt=""
-          />
-        </div>
-      </Link>
+
+      <div className="flex-1 mt-28">
+        <img
+          src="https://img.freepik.com/free-vector/blogging-concept-illustration_114360-4480.jpg?size=626&ext=jpg&ga=GA1.2.507420265.1658291633"
+          className=""
+          alt=""
+        />
+      </div>
     </div>
   );
 };
