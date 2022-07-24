@@ -17,19 +17,19 @@ const Card = () => {
   function render() {
     if (data) {
       return (
-        <div className=" w-1/2 m-auto my-5">
-          <h1 className=" text-3xl text-bold text-center p-10">
+        <div className="w-screen mt-12 md:mt-32 md:w-1/2 m-auto my-5">
+          <h1 className="text-xl mb-10 md:text-3xl text-bold text-center mb-5">
             {" "}
             {data.title}
           </h1>
           <img
-            className="w-full "
+            className="w-full mb-10"
             src="https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg?size=626&ext=jpg&ga=GA1.2.507420265.1658291633"
             alt="blog"
           />
-          <p className="font-xl p-10">{data.body}</p>
+          <p className="break-normal mb-10 text-md md:text-xl">{data.body}</p>
           <Link to="/blog">
-            <button className=" bg-yellow-400 mx-10 px-8 py-3 rounded-md text-lg hover:bg-yellow-300">
+            <button className="bg-yellow-400 px-8 py-3 rounded-md text-lg hover:bg-yellow-300">
               Back
             </button>
           </Link>
@@ -38,7 +38,7 @@ const Card = () => {
     }
   }
 
-  return <div className=" p-10">{render()}</div>;
+  return <div className="py-10 px-3 md:p-10">{render()}</div>;
 };
 
 export default Card;
